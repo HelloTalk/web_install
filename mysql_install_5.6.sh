@@ -28,7 +28,8 @@ bin_dir=/usr/local/mysql
 yum install -y git wget
 yum install -y gcc gcc-c++  make
 yum install –y openssl openssl-devel ncurses ncurses-devel cmake
-  
+yum install -y libaio-devel.x86_64
+
 cd $src_dir 
 mysql_version="5.6.41"
 if [ ! -f $src_dir/mysql-$mysql_version.tar.gz ] ; then 
